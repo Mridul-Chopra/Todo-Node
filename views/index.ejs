@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Today's Todo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src ="js/ajax-handlers.js"></script>
+  </head>
+
+  <body>
+
+  <div id="todo-table">
+    <h1></h1>
+        <form>
+          <input type="text" id="task"  name="task">
+          <button type="button" name="button" id ="add">Add Task</button>
+        </form>
+
+        <ul id ='task-list'>
+          <% for (var i=0; i<todos.length ; i++) {%>
+            <li><%=todos[i].item%></li>
+          <% } %>
+        </ul>
+  </div>
+
+  </body>
+</html>
